@@ -23,7 +23,7 @@ function Coins() {
 
   return (
       <table className="w-[90%] max-w-[80rem] mx-auto">
-        <thead className="text-md">
+        <thead className="text-md border-b">
           <th className="text-start px-2">#</th>
           <th className="text-start px-2">Name</th>
           <th className="text-start px-2">Price (USD)</th>

@@ -1,7 +1,9 @@
+import {Link} from "react-router-dom";
+
 function Footer() {
     return (
         <div>
-            Footer
+            <Link to="/"><span></span></Link>
         </div>
     );
 }
