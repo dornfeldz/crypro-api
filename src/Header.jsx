@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <div>
+        <div className="bg-black">
             Header
         </div>
     );

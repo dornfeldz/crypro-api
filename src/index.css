@@ -2,17 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.main-gradient-background{
-    background: hsla(224, 51%, 29%, 1);
+/*.main-gradient-background{*/
+/*    background: hsla(224, 51%, 29%, 1);*/
 
-    background: radial-gradient(circle, hsla(224, 51%, 29%, 1) 19%, hsla(213, 82%, 4%, 1) 100%);
+/*    background: radial-gradient(circle, hsla(224, 51%, 29%, 1) 19%, hsla(213, 82%, 4%, 1) 100%);*/
 
-    background: -moz-radial-gradient(circle, hsla(224, 51%, 29%, 1) 19%, hsla(213, 82%, 4%, 1) 100%);
+/*    background: -moz-radial-gradient(circle, hsla(224, 51%, 29%, 1) 19%, hsla(213, 82%, 4%, 1) 100%);*/
 
-    background: -webkit-radial-gradient(circle, hsla(224, 51%, 29%, 1) 19%, hsla(213, 82%, 4%, 1) 100%);
+/*    background: -webkit-radial-gradient(circle, hsla(224, 51%, 29%, 1) 19%, hsla(213, 82%, 4%, 1) 100%);*/
 
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#253971", endColorstr="#020A14", GradientType=1 );
-}
+/*    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#253971", endColorstr="#020A14", GradientType=1 );*/
+/*}*/
 
 .card-blur-background{
     backdrop-filter: blur(200px);

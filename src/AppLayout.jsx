@@ -4,7 +4,7 @@ import Footer from "./Footer.jsx";
 
 function AppLayout() {
     return (
-        <div  className="main-gradient-background text-white h-screen">
+        <div  className="h-screen">
             <Header/>
             <Outlet/>
             <Footer/>
