@@ -34,9 +34,9 @@ function Coins() {
         </thead>
         <tbody className="text-xs lg:text-lg">
           {coins.map(coin =>(
-              <tr className="hover:bg-black border-b border-b-neutral-500 h-10" key={coin.symbol}>
+              <tr className="hover:bg-black border-b border-b-neutral-500 h-12" key={coin.symbol}>
                 <td className="px-2">{coin.rank}</td>
-                <td className="flex flex-col lg:flex-row lg:gap-2 lg:items-center"><span  className="text-md lg:text-2xl font-semibold">{coin.name}</span> <span className="text-orange-400 text-xs lg:text-sm">({coin.symbol})</span></td>
+                <td className="flex flex-col lg:flex-row lg:gap-2 lg:items-center pt-1"><span  className="text-md lg:text-2xl font-semibold">{coin.name}</span> <span className="text-orange-400 text-xs lg:text-sm">({coin.symbol})</span></td>
                 <td className="px-2">${coin.price_usd}</td>
                 <td className="px-2">{coin.percent_change_1h}</td>
                 <td className="px-2">{coin.percent_change_24h}</td>
