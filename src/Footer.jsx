@@ -10,7 +10,7 @@ function Footer() {
                         <Link className="mb-6" to="/">Home</Link>
                         <Link to="https://www.coinlore.com/cryptocurrency-data-api" target="_blank">API</Link>
                         <Link className="mb-6" to="https://dornfeld.dev" target="_blank">Contact</Link>
-                        <Link to="https://github.com/dornfeldz" target="_blank">GitHub</Link>
+                        <Link to="https://github.com/dornfeldz/crypro-api" target="_blank">GitHub</Link>
                     </div>
                 </div>
             </div>
