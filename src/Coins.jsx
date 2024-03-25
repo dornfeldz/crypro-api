@@ -23,7 +23,7 @@ function Coins() {
 
   return (
       <table className="w-[90%] max-w-[80rem] mx-auto">
-        <thead className="text-md border-b">
+        <thead className="text-xs lg:text-lg border-b">
           <th className="text-start px-2">#</th>
           <th className="text-start px-2">Name</th>
           <th className="text-start px-2">Price (USD)</th>
@@ -32,11 +32,11 @@ function Coins() {
           <th className="text-start px-2">Week</th>
           <th className="text-start px-2">Market cap (USD)</th>
         </thead>
-        <tbody className="text-lg">
+        <tbody className="text-xs lg:text-lg">
           {coins.map(coin =>(
               <tr className="hover:bg-black" key={coin.symbol}>
                 <td className="px-2">{coin.rank}</td>
-                <td className="px-2"><span  className="text-2xl font-semibold">{coin.name}</span> <span className="text-orange-400 text-sm">({coin.symbol})</span></td>
+                <td className="px-2"><span  className="text-md lg:text-2xl font-semibold">{coin.name}</span> <span className="text-orange-400 text-xs lg:text-sm">({coin.symbol})</span></td>
                 <td className="px-2">${coin.price_usd}</td>
                 <td className="px-2">{coin.percent_change_1h}</td>
                 <td className="px-2">{coin.percent_change_24h}</td>
