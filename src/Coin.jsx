@@ -21,13 +21,31 @@ function Coin() {
 
         const interval = setInterval(() => {
             fetchData();
-        }, 10000);
+        }, 1000);
 
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <div className="text-orange-400">{coin.name}</div>
+        <div>
+            <div className="flex items-baseline gap-4">
+                <p className="text-6xl text-orange-400 italic">#{coin.rank}</p>
+                <div className="flex items-baseline gap-2">
+                    <p className="text-5xl font-bold">{coin.name}</p>
+                    <p className="">({coin.symbol})</p>
+                    <p className="">{coin.price_usd}</p>
+                </div>
+            </div>
+            <p className="">{coin.percent_change_1h}</p>
+            <p className="">{coin.percent_change_24h}</p>
+            <p className="">{coin.percent_change_7d}</p>
+            <p className="">{coin.market_cap_usd}</p>
+            <p className="">{coin.volume24}</p>
+            <p className="">{coin.volume24a}</p>
+            <p className="">{coin.csupply}</p>
+            <p className="">{coin.tsupply}</p>
+            <p className="">{coin.msupply}</p>
+        </div>
     );
 }
 
