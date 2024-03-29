@@ -40,7 +40,7 @@ function Coins() {
         </thead>
         <tbody className="text-xs lg:text-lg">
           {coins.map(coin =>(
-              <tr className="hover:bg-black border-b border-b-neutral-500 h-12" key={coin.id} onClick={()=>handleClick(coin.id)}>
+              <tr className="hover:bg-black hover:cursor-pointer border-b border-b-neutral-500 h-12" key={coin.id} onClick={()=>handleClick(coin.id)}>
                 <td className="px-2">{coin.rank}</td>
                 <td className="flex flex-col lg:flex-row lg:gap-2 lg:items-center pt-2"><span  className="text-md lg:text-2xl font-semibold items-center">{coin.name}</span> <span className="text-orange-400 text-xs lg:text-sm">({coin.symbol})</span></td>
                 <td className="px-2">${coin.price_usd}</td>
