@@ -1,9 +1,11 @@
 import Coin from "./Coin.jsx";
 import {useState, useEffect} from "react";
+import {useNavigate} from "react-router";
 
 
 function Coins() {
   const [coins, setCoins] = useState([]);
+  const navigate = useNavigate();
 
   async function fetchData() {
     const response = await fetch('https://api.coinlore.net/api/tickers/?start=0&limit=50');
@@ -21,6 +23,10 @@ function Coins() {
     return () => clearInterval(interval);
   }, []);
 
+  function handleClick(id){
+      navigate(`/coin/${id}`)
+  }
+
   return (
       <table className="w-[90%] max-w-[80rem] mx-auto">
         <thead className="text-xs lg:text-lg border-b">
@@ -34,7 +40,7 @@ function Coins() {
         </thead>
         <tbody className="text-xs lg:text-lg">
           {coins.map(coin =>(
-              <tr className="hover:bg-black border-b border-b-neutral-500 h-12" key={coin.symbol}>
+              <tr className="hover:bg-black border-b border-b-neutral-500 h-12" key={coin.id} onClick={()=>handleClick(coin.id)}>
                 <td className="px-2">{coin.rank}</td>
                 <td className="flex flex-col lg:flex-row lg:gap-2 lg:items-center pt-2"><span  className="text-md lg:text-2xl font-semibold items-center">{coin.name}</span> <span className="text-orange-400 text-xs lg:text-sm">({coin.symbol})</span></td>
                 <td className="px-2">${coin.price_usd}</td>
