@@ -1,8 +1,9 @@
 import AppLayout from "./AppLayout.jsx";
-import {createBrowserRouter, Outlet, RouterProvider,
+import {createBrowserRouter, RouterProvider,
 } from "react-router-dom";
 import Coins from "./Coins.jsx";
 import Coin from "./Coin.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 const router = createBrowserRouter([
     {
@@ -23,7 +24,9 @@ const router = createBrowserRouter([
 function App() {
     return (
         <div>
-            <RouterProvider router={router}/>
+            <RouterProvider router={router}>
+                <ScrollToTop/>
+            </RouterProvider>
         </div>
     );
 }

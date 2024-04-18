@@ -30,6 +30,8 @@ function Coins() {
   return (
       <table className="w-[90%] max-w-[80rem] mx-auto">
         <thead className="text-xs lg:text-lg border-b">
+        <tr>
+
           <th className="text-start px-2">#</th>
           <th className="text-start px-2">Name</th>
           <th className="text-start px-2">Price (USD)</th>
@@ -37,6 +39,7 @@ function Coins() {
           <th className="text-start px-2">Day</th>
           <th className="text-start px-2">Week</th>
           <th className="text-start px-2">Market cap (USD)</th>
+        </tr>
         </thead>
         <tbody className="text-xs lg:text-lg">
           {coins.map(coin =>(
@@ -56,3 +59,6 @@ function Coins() {
 }
 
 export default Coins;
+
+
+
